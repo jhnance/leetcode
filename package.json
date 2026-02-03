@@ -1,0 +1,11 @@
+{
+  "name": "leetcode",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "vitest": "^4.0.18"
+  }
+}
