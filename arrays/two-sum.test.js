@@ -10,7 +10,11 @@ test('Test two', () => {
     assert.sameMembers(result, [1, 2])
 })
 
-test('Test one', () => {
+test('Test three', () => {
     const result = twoSum([3, 3], 6)
     assert.sameMembers(result, [0, 1])
+})
+
+test('Returns undefined for invalid input (not matching problem constraints)', () => {
+    assert.isUndefined(twoSum([2, 9], 10))
 })
