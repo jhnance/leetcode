@@ -6,9 +6,21 @@ test('All positive values', () => {
     assert.deepEqual(result, [1, 2])
 })
 
+test('All positive values, identical values', () => {
+    const numbers = [3, 3, 12]
+    const result = twoSum(numbers, 6)
+    assert.deepEqual(result, [1, 2])
+})
+
 test('Some negative values', () => {
     const numbers = [-2, -1, 0]
     const result = twoSum(numbers, -1)
+    assert.deepEqual(result, [2, 3])
+})
+
+test('Some negative values, identical values', () => {
+    const numbers = [-2, -1, -1, 1]
+    const result = twoSum(numbers, -2)
     assert.deepEqual(result, [2, 3])
 })
 
@@ -16,6 +28,12 @@ test('All negative values', () => {
     const numbers = [-3, -2, -1]
     const result = twoSum(numbers, -3)
     assert.deepEqual(result, [2, 3])
+})
+
+test('All negative values, identical values', () => {
+    const numbers = [-3, -3, -2]
+    const result = twoSum(numbers, -6)
+    assert.deepEqual(result, [1, 2])
 })
 
 test('Returns undefined for invalid input (not matching problem constraints)', () => {
