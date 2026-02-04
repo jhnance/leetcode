@@ -1,6 +1,6 @@
 /**
  * Difficulty: easy
- * Leetcode link:https://leetcode.com/problems/valid-palindrome-ii
+ * Leetcode link: https://leetcode.com/problems/valid-palindrome-ii
  *
  * Description
  * -----------
