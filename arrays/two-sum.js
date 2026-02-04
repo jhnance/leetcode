@@ -24,6 +24,16 @@
  *
  * Input: `nums` = [3, 3], `target` = 6
  * Output: [0, 1]
+ *
+ * Complexity
+ * ----------
+ *
+ * Time: O(n)
+ * We iterate over every element of `nums` once, and do constant-time operations
+ * in each iteration.
+ *
+ * Space: O(n)
+ * In the worst case, we add `n - 1` elements to our `encountered` Map.
  */
 
 export function twoSum(nums, target) {

@@ -13,6 +13,16 @@
  * 1. Open brackets must be closed by the same type of brackets.
  * 2. Open brackets must be closed in the correct order.
  * 3. Every close bracket has a corresponding open bracket of the same type.
+ *
+ * Complexity
+ * ----------
+ *
+ * Time: O(n)
+ * We visit every character in the string once.
+ *
+ * Space: O(n)
+ * In the worst-case scenario, we add every character in the original string to
+ * our list of opening parens.
  */
 
 export function isValid(string) {
@@ -20,7 +30,9 @@ export function isValid(string) {
 
     for (let char of string) {
         if (!isValidChar(char)) {
-            throw Error('Invalid input; it must contain only ["(", "{", "[", "]", "}", ")"]')
+            throw Error(
+                'Invalid input; it must contain only ["(", "{", "[", "]", "}", ")"]',
+            )
         }
 
         if (isOpener(char)) {
@@ -40,15 +52,19 @@ export function isValid(string) {
 
 function getMatch(paren) {
     switch (paren) {
-        case '(': return ')'
-        case '{': return '}'
-        case '[': return ']'
-        default: return null
+        case '(':
+            return ')'
+        case '{':
+            return '}'
+        case '[':
+            return ']'
+        default:
+            return null
     }
 }
 
 function isOpener(c) {
-    return c === '(' || c === '{' || c ==='['
+    return c === '(' || c === '{' || c === '['
 }
 
 function isValidChar(c) {

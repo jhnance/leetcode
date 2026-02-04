@@ -29,6 +29,17 @@
  *
  * Input: `numbers` = [-1, 0], `target` = -1
  * Output: [1, 2]
+ *
+ * Complexity
+ * ----------
+ *
+ * Time: O(n)
+ * We iterate over every element in `numbers` once and do constant-time
+ * operations in each iteration.
+ *
+ * Space: O(1)
+ * We allocate the same number of variables and one fixed-size output array,
+ * regardless of the size of the input.
  */
 
 export function twoSum(numbers, target) {
