@@ -1,4 +1,4 @@
-import { RecentCounter } from './recent-counter'
+import { RecentCounter } from './number-of-recent-calls'
 
 test('Returns the expected outputs', () => {
     const outputs = []

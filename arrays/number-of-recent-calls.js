@@ -5,12 +5,12 @@
  * Description
  * -----------
  *
- * You have a `RecentCounter` class that counts the number of recent requests
+ * You have a `NumberOfRecentCalls` class that counts the number of recent requests
  * within a certain timeframe.
  *
- * Implement the `RecentCounter` class:
+ * Implement the `NumberOfRecentCalls` class:
  *
- * `new RecentCounter()` initializes the counter with zero recent requests
+ * `new NumberOfRecentCalls()` initializes the counter with zero recent requests
  *
  * `ping(t)` adds a new request at time `t`, where `t` represents some time in
  * milliseconds, and returns the number of requests that have happened in the past
@@ -25,7 +25,7 @@
  * (Note, these are not actually array inputs and outputs, just collections of
  * distinct inputs and outputs grouped together.)
  * Input:
- * [`new RecentCounter()`, `ping(1)`, `ping(100)`, `ping(3001)`, `ping(3002)`]
+ * [`new NumberOfRecentCalls()`, `ping(1)`, `ping(100)`, `ping(3001)`, `ping(3002)`]
  * Output:
  * [undefined, 1, 2, 3, 3]
  *
