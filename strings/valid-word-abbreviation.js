@@ -37,67 +37,35 @@
  * Input: `word` = "apple", `abbr` = "a2e"
  * Output: false (there are 3 characters between the 'a' and 'e')
  */
-
-/**
- * Initial thoughts
- * ----------------
- *
- * It seems like we can do this in one pass.
- *
- * Need two pointers:
- * 1. keep track of which character we're on in the `word`
- * 2. keep track of where we are in the `abbr`
- *
- * When we encounter a digit in the `abbr`, we start parsing that number for the
- * abbreviation length. We then attempt to increment the wordIndex by that number,
- * so long as it would not put us out of bounds.
- *
- * The next loop iteration, we're presumably on a non-numerical character in each
- * of the inputs, and we can check for equality.
- *
- */
 export function validWordAbbreviation(word, abbr) {
     if (abbr.length > word.length) return false
 
     let wordIndex = 0
     let abbrIndex = 0
+
     while (wordIndex <= word.length && abbrIndex <= abbr.length) {
-        if (isDigit(abbr[abbrIndex])) {
-            if (abbr[abbrIndex] === '0') return false
-
-            let startIndex = abbrIndex
-            while (isDigit(abbr[abbrIndex])) {
-                abbrIndex++
-            }
-
-            const abbreviationLength = parseAbbreviationLength(
-                abbr,
-                startIndex,
-                abbrIndex,
-            )
-
-            if (abbreviationLength > word.substring(wordIndex).length) {
-                return false
-            }
-
-            wordIndex += abbreviationLength
-        } else {
-            if (word[wordIndex] !== abbr[abbrIndex]) {
-                return false
-            } else {
-                wordIndex++
-                abbrIndex++
-            }
+        if (!isDigit(abbr[abbrIndex])) {
+            if (word[wordIndex++] !== abbr[abbrIndex++]) return false
+            else continue
         }
+
+        if (abbr[abbrIndex] === '0') return false
+
+        let endIndex = abbrIndex + 1
+        while (endIndex < abbr.length && isDigit(abbr[endIndex])) {
+            endIndex++
+        }
+        let skipCount = Number(abbr.substring(abbrIndex, endIndex))
+
+        if (skipCount > word.substring(wordIndex).length) return false
+
+        wordIndex += skipCount
+        abbrIndex = endIndex
     }
 
     return true
 }
 
-function parseAbbreviationLength(string, start, end) {
-    return Number(string.substring(start, end))
-}
-
-function isDigit(char) {
-    return /\d/.test(char)
+function isDigit(c) {
+    return /\d/.test(c)
 }

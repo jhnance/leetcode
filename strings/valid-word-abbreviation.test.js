@@ -2,6 +2,8 @@ import { validWordAbbreviation } from './valid-word-abbreviation'
 
 test('Fully abbreviated word', () => {
     expect(validWordAbbreviation('abc', '3')).toBe(true)
+    expect(validWordAbbreviation('internationalization', 'i12iz4n')).toBe(true)
+    expect(validWordAbbreviation('internationalization', 'i5a11o1')).toBe(true)
 })
 
 test('Does not allow leading zeros in abbreviations', () => {
@@ -16,6 +18,7 @@ test('Partially abbreviated word, correct', () => {
 test('Incorrectly abbreviated word', () => {
     expect(validWordAbbreviation('abcdef', 'abc2def')).toBe(false)
     expect(validWordAbbreviation('apple', 'a2e')).toBe(false)
+    expect(validWordAbbreviation('hi', '2i')).toBe(false)
 })
 
 test('Abbreviated word is longer than the word itself', () => {
