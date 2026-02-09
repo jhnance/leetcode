@@ -1,6 +1,6 @@
 /**
  * Difficulty: easy
- * Leetcode link:https://leetcode.com/problems/valid-word-abbreviation
+ * Leetcode link: https://leetcode.com/problems/valid-word-abbreviation
  *
  * Description
  * -----------

@@ -1,6 +1,6 @@
 /**
  * Difficulty: easy
- * Leetcode link:https://leetcode.com/problems/number-of-recent-calls
+ * Leetcode link: https://leetcode.com/problems/number-of-recent-calls
  *
  * Description
  * -----------

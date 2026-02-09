@@ -1,6 +1,6 @@
 /**
  * Difficulty: easy
- * Leetcode link:https://leetcode.com/problems/move-zeroes
+ * Leetcode link: https://leetcode.com/problems/move-zeroes
  *
  * Description
  * -----------

@@ -1,6 +1,6 @@
 /**
  * Difficulty: easy
- * Leetcode link:https://leetcode.com/problems/majority-element
+ * Leetcode link: https://leetcode.com/problems/majority-element
  *
  * Description
  * -----------

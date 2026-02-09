@@ -1,6 +1,6 @@
 /**
  * Difficulty: easy
- * Leetcode link:https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+ * Leetcode link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock
  *
  * Description
  * -----------
