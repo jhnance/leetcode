@@ -29,17 +29,20 @@
  * Input: `nums` = [1, 2, 2]
  * Output: 0
  * Explanation: The array `nums` is already sorted.
- */
-
-/**
- * An element of one adjacent pair can overlap another adjacent pair.
- * For example, [5, 2, 4] has two adjacent pairs: (5, 2) and (2, 4).
  *
- * To find the minimum adjacent pair, every time your array changes you need to do
- * n operations to find it.
+ * Complexity
+ * ----------
  *
- * [1, 2, 1, 2, 4] has two minimum adjacent pairs (1, 2) and (1, 2), so you choose
- * the leftmost one at indexes [0, 1].
+ * Time: O(n^2)
+ * If this didn't require modifying the array, I think this would technically
+ * be O(kn) where k < n, because we're looping over the same array many times
+ * but doing constant time comparisons inside each iteration.
+ *
+ * However, with the array modification, that brings in an additional O(n) operation,
+ * making this O(n^2) overall.
+ *
+ * Space: O(n)
+ * We allocate an array of maximum size `nums.length` to modify throughout.
  */
 export function minimumPairRemoval(nums) {
     let replaced = [...nums]
@@ -57,12 +60,10 @@ export function minimumPairRemoval(nums) {
 
             if (next < curr) nonDecreasing = false
 
-            if (i + 1 < replaced.length) {
-                let pairSum = curr + next
-                if (pairSum < minPairSum) {
-                    minPairSum = pairSum
-                    minPairSumIndex = i
-                }
+            let pairSum = curr + next
+            if (pairSum < minPairSum) {
+                minPairSum = pairSum
+                minPairSumIndex = i
             }
         }
 
