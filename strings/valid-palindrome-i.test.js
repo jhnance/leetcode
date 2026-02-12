@@ -1,4 +1,4 @@
-import { isPalindrome } from './valid-palindrome'
+import { isPalindrome } from './valid-palindrome-i'
 
 test('Returns true for valid palindromes', () => {
     expect(isPalindrome('A man, a plan, a canal: Panama')).toBe(true)
