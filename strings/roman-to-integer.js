@@ -27,18 +27,18 @@
  *   * X can be placed before L (50) and C (100) to make 40 and 90
  *   * C can be placed before D (500) and M (1000) to make 400 and 900
  * Given a roman numeral, convert it to an integer.
- */
-
-/**
- * Thought process
- * ---------------
  *
- * It seems easier to go from a roman numeral to an integer, instead of the reverse.
  *
- * We know the exceptions. So, when we encounter an I, an X, or a C, we check
- * for the next character. If the character matches one of the known exceptions,
- * then we know we are not parsing them as-is one after the other, but instead
- * parsing them as a pair, one of the subtraction edge cases.
+ * Complexity
+ * ----------
+ *
+ * Time: O(n)
+ * We have to visit each character in the input string once, and we perform
+ * constant-time operations each visit.
+ *
+ * Space: O(1)
+ * We allocate a map for values whose size never changes based on the input.
+ * We allocate a variable for the sum we track, which is just a single integer value.
  */
 export function romanToInt(s) {
     const values = {
