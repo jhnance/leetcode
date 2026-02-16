@@ -52,7 +52,7 @@ export function merge(nums1, m, nums2, n) {
     for (let i = m + n - 1; i > -1; i--) {
         if (b < 0) break
 
-        if (a >= 0 && nums1[a] > nums2[b]) {
+        if (nums1[a] > nums2[b]) {
             nums1[i] = nums1[a--]
         } else {
             nums1[i] = nums2[b--]
