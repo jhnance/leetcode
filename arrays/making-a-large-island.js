@@ -37,7 +37,7 @@
  * 1 <= n <= 500
  * grid[i][j] is either 0 or 1.
  */
-function largestIsland(grid) {
+export function largestIsland(grid) {
     let cellToIsland = new Map()
     let islandToArea = new Map()
     let maxArea = 0
