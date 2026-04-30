@@ -11,9 +11,10 @@ export function insertInterval(intervals, newInterval) {
     const merged = []
     let i = 0
     const n = intervals.length
+    const toInsert = [...newInterval]
 
     // insert intervals as long as they don't conflict with the new one
-    while (i < n && intervals[i][END] < newInterval[START]) {
+    while (i < n && intervals[i][END] < toInsert[START]) {
         merged.push(intervals[i])
         i++
     }
@@ -29,12 +30,12 @@ export function insertInterval(intervals, newInterval) {
      * We only need to look forward, and expand newInterval until its end does not
      * conflict with the next interval in our original list.
      */
-    while (i < n && intervals[i][START] <= newInterval[END]) {
-        newInterval[START] = Math.min(intervals[i][START], newInterval[START])
-        newInterval[END] = Math.max(intervals[i][END], newInterval[END])
+    while (i < n && intervals[i][START] <= toInsert[END]) {
+        toInsert[START] = Math.min(intervals[i][START], toInsert[START])
+        toInsert[END] = Math.max(intervals[i][END], toInsert[END])
         i++
     }
-    merged.push(newInterval)
+    merged.push(toInsert)
 
     /**
      * All that's left to do is push the remaining intervals, because we know
