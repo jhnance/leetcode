@@ -8,6 +8,10 @@
  * Input: `intervals` = [[1, 3], [5, 8], [4, 10], [11, 13]]
  * Output: 1
  * Explanation: Removing the interval [4, 10] leaves all others non-overlapping.
+ *
+ * Note: the other way to think about this problem is to identify the maximum number
+ * of non-overlapping intervals. The approach doesn't change, just what you return. The maximum number
+ * would be the original length - our count.
  */
 
 const START = 0
