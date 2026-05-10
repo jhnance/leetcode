@@ -22,7 +22,6 @@
  * Input: nums = [1,0,1,2]
  * Output: 3
  *
- *
  * Constraints
  * -----------
  * 0 <= nums.length <= 105
