@@ -1,4 +1,4 @@
-import { nonOverlappingIntervals } from './non-overlapping-intervals'
+import { nonOverlappingIntervals } from '../arrays/non-overlapping-intervals'
 
 test('removes a single offending interval', () => {
     expect(

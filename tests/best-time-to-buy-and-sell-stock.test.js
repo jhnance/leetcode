@@ -1,4 +1,4 @@
-import { maxProfit } from './best-time-to-buy-and-sell-stock'
+import { maxProfit } from '../arrays/best-time-to-buy-and-sell-stock'
 
 test('Returns the correct maximum profit, when there are multiple potential selling points', () => {
     expect(maxProfit([7, 1, 5, 3, 6, 4])).toBe(5)

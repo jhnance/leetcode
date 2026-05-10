@@ -1,4 +1,4 @@
-import { generate } from './pascals-triangle'
+import { generate } from '../arrays/pascals-triangle'
 
 function getPairSumsOfLastRow(triangle) {
     const lastRow = triangle.pop()

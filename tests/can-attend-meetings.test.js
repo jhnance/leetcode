@@ -1,4 +1,4 @@
-import { canAttendMeetings } from './can-attend-meetings'
+import { canAttendMeetings } from '../arrays/can-attend-meetings'
 
 test('contiguous meetings', () => {
     expect(

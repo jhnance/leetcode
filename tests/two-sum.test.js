@@ -1,4 +1,4 @@
-import { twoSum } from './two-sum'
+import { twoSum } from '../arrays/two-sum'
 
 test('All positive values, sorted', () => {
     const result = twoSum([2, 7, 11, 15], 9)

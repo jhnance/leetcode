@@ -1,4 +1,4 @@
-import { largestIsland } from './making-a-large-island'
+import { largestIsland } from '../arrays/making-a-large-island'
 
 test('Returns 1 for an empty grid', () => {
     expect(

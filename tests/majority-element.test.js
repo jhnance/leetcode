@@ -1,4 +1,4 @@
-import { majorityElement } from './majority-element.js'
+import { majorityElement } from '../arrays/majority-element.js'
 
 test('Returns the correct majority element', () => {
     expect(majorityElement([1, 2, 2, 2, 1])).toBe(2)

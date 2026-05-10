@@ -1,4 +1,4 @@
-import { check } from './check-if-array-is-sorted-and-rotated'
+import { check } from '../arrays/check-if-array-is-sorted-and-rotated'
 
 test('Returns true for a rotated, sorted array', () => {
     expect(check([5, 1, 2, 3, 4])).toBe(true)

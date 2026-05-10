@@ -1,4 +1,4 @@
-import { merge } from './merge-sorted-array'
+import { merge } from '../arrays/merge-sorted-array'
 
 test('Correctly merges arrays when all elements are positive', () => {
     // all positive

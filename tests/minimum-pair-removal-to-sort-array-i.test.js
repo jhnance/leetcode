@@ -1,4 +1,4 @@
-import { minimumPairRemoval } from './minimum-pair-removal-to-sort-array-i'
+import { minimumPairRemoval } from '../arrays/minimum-pair-removal-to-sort-array-i'
 
 test('Returns the correct number of removals for an input array of even length', () => {
     expect(minimumPairRemoval([5, 2, 3, 1])).toBe(2)

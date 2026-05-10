@@ -1,4 +1,4 @@
-import { employeeFreeTime } from './employee-free-time'
+import { employeeFreeTime } from '../arrays/employee-free-time'
 
 test('correctly identifies gaps of free time in the schedule', () => {
     expect(

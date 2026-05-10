@@ -1,4 +1,4 @@
-import { firstBadVersion } from './first-bad-version'
+import { firstBadVersion } from '../arrays/first-bad-version'
 
 test('Identifies the correct version', () => {
     let check = firstBadVersion((n) => {

@@ -1,4 +1,4 @@
-import { minTimeToVisitAllPoints } from './minimum-time-visiting-all-points'
+import { minTimeToVisitAllPoints } from '../arrays/minimum-time-visiting-all-points'
 
 test('Visit multiple points in both the positive and negative directions', () => {
     expect(

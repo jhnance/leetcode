@@ -1,4 +1,4 @@
-import { mergeIntervals } from './merge-overlapping-intervals'
+import { mergeIntervals } from '../arrays/merge-overlapping-intervals'
 
 test('merges overlapping intervals', () => {
     const intervalSets = [

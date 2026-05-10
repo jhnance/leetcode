@@ -1,4 +1,4 @@
-import { insertInterval } from './insert-interval'
+import { insertInterval } from '../arrays/insert-interval'
 
 test('inserts interval at the beginning, no merging', () => {
     expect(
