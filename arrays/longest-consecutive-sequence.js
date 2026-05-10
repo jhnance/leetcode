@@ -34,16 +34,11 @@ function longestConsecutive(nums) {
 
     let longest = 1
 
-    for (let num of nums) {
-        /**
-         * This check ensures that we don't duplicate the loop over any subsequence
-         * of any longer sequence.
-         *
-         * For example, if your Set has {2, 3, 4, 5, 6, 7, 1}
-         * we would only process this sequence once we reach 1; for any number
-         * after 1, we'll skip over them because we know we only care about
-         * the start of the sequence when calculating its length.
-         */
+    /**
+     * Looping over encountered is important because there might be several
+     * duplicates in nums. Each duplicate is a wasted iteration.
+     */
+    for (let num of encountered) {
         if (!encountered.has(num - 1)) {
             let length = 1
             let value = num
