@@ -103,7 +103,7 @@ function sortColors(nums) {
     let right = nums.length - 1
     let i = 0
 
-    while (i < right) {
+    while (i <= right) {
         const num = nums[i]
         if (num === 0) {
             ;[nums[i], nums[left]] = [nums[left], nums[i]]
@@ -122,5 +122,3 @@ function sortColors(nums) {
     }
     return nums
 }
-
-console.log(sortColors([2, 1, 2, 1, 0]))
