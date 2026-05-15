@@ -1,4 +1,4 @@
-import { validWordAbbreviation } from './valid-word-abbreviation'
+import { validWordAbbreviation } from '../strings/valid-word-abbreviation'
 
 test('Fully abbreviated word', () => {
     expect(validWordAbbreviation('abc', '3')).toBe(true)

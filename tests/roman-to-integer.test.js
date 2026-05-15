@@ -1,4 +1,4 @@
-import { romanToInt } from './roman-to-integer'
+import { romanToInt } from '../strings/roman-to-integer'
 
 test('Returns the correct integer (no subtraction)', () => {
     expect(romanToInt('III')).toBe(3)

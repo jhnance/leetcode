@@ -1,4 +1,4 @@
-import { HitCounter } from './hit-counter'
+import { HitCounter } from '../binary-search/hit-counter'
 
 test('Correctly reports 0 when no hits have been registered', () => {
     const hitCounter = new HitCounter()

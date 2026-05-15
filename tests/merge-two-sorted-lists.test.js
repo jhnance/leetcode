@@ -1,4 +1,4 @@
-import { ListNode, mergeTwoLists } from './merge-two-sorted-lists'
+import { ListNode, mergeTwoLists } from '../linked-list/merge-two-sorted-lists'
 
 function listToArray(list) {
     const output = []

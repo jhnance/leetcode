@@ -1,4 +1,4 @@
-import { minRemoveToMakeValid } from './minimum-remove-valid-parens'
+import { minRemoveToMakeValid } from '../strings/minimum-remove-valid-parens'
 
 test('Returns the empty string for a completely invalid input', () => {
     expect(minRemoveToMakeValid('))((')).toBe('')

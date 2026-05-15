@@ -1,4 +1,4 @@
-import { addStrings } from './add-strings'
+import { addStrings } from '../strings/add-strings'
 
 test('Adds equal length inputs correctly', () => {
     expect(addStrings('123', '456')).toBe('579')

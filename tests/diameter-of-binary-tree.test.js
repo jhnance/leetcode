@@ -1,4 +1,4 @@
-import { diameterOfBinaryTree } from './diameter-of-binary-tree'
+import { diameterOfBinaryTree } from '../trees/diameter-of-binary-tree'
 
 function TreeNode(val = 0, left = null, right = null) {
     this.val = val

@@ -1,4 +1,4 @@
-import { findMin } from './find-minimum-in-rotated-sorted-array'
+import { findMin } from '../binary-search/find-minimum-in-rotated-sorted-array'
 
 test('Correctly identifies the minimum in the first position', () => {
     expect(findMin([1, 2, 3, 4, 5])).toBe(1)

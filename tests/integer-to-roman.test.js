@@ -1,4 +1,4 @@
-import { intToRoman } from './integer-to-roman'
+import { intToRoman } from '../strings/integer-to-roman'
 
 test('Correctly converts integers to their roman numeral representations', () => {
     expect(intToRoman(1000)).toBe('M')

@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from './longest-common-prefix'
+import { longestCommonPrefix } from '../strings/longest-common-prefix'
 
 test('Determines the correct prefix', () => {
     expect(longestCommonPrefix(['flower', 'flow', 'flight'])).toBe('fl')
