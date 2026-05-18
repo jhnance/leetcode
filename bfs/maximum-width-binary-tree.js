@@ -34,6 +34,8 @@ function widthOfBinaryTree(root) {
 
 /**
  * Weirdness below... avoiding calls to shift() and using a pointer instead.
+ * (Not that weird, it's just an optimization you don't typically see. Good to know
+ * what it could look like, though.)
  */
 
 function other(root) {
